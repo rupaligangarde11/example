@@ -1,1 +1,1 @@
-java -jar example.jar
+web: bin/example
