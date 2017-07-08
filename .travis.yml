@@ -11,3 +11,6 @@ jobs:
   includes:
     - stage: build
       script : ./gradlew build
+
+after_success:
+ script: deploy.sh
