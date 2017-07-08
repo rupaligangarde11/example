@@ -1,0 +1,24 @@
+buildscript{
+    ext{
+        springBootVersion='1.4.7.RELEASE'
+    }
+
+    repositories{
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'application'
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-test')
+}
+
+repositories{
+    mavenCentral()
+}
