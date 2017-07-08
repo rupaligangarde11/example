@@ -19,6 +19,13 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-test')
 }
 
+distZip {
+    into(project.name) {
+        from '.'
+        include 'Procfile'
+    }
+}
+
 repositories{
     mavenCentral()
 }
